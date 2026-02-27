@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal & Support | AE Solutions</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <style>
+        :root {
+            --bg-deep: #02040a;
+            --bg-card: #0b111e;
+            --primary: #3b82f6;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: rgba(255, 255, 255, 0.05);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.8;
+            padding-bottom: 0px; 
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 { font-family: 'Outfit', sans-serif; color: white; }
+        
+        .container { max-width: 800px; margin: 0 auto; padding: 0 5%; }
+        
+        .header { margin: 60px 0; text-align: center; border-bottom: 1px solid var(--border); padding-bottom: 40px; }
+        .back-btn { display: inline-flex; align-items: center; gap: 8px; color: var(--primary); text-decoration: none; font-weight: 600; margin-bottom: 20px; }
+        .back-btn:hover { text-decoration: underline; }
+
+        .legal-section { margin-bottom: 60px; scroll-margin-top: 40px; }
+        .legal-section h2 { font-size: 2rem; margin-bottom: 20px; color: var(--primary); }
+        .legal-section h3 { font-size: 1.2rem; margin: 25px 0 10px 0; }
+        .legal-section p, .legal-section li { color: var(--text-muted); margin-bottom: 15px; }
+        .legal-section ul { padding-left: 20px; }
+
+        .support-box {
+            background: var(--bg-card); border: 1px solid var(--border);
+            padding: 40px; border-radius: 20px; text-align: center;
+        }
+        .contact-link { color: white; text-decoration: none; border-bottom: 1px solid var(--primary); }
+
+        /* --- FOOTER CSS --- */
+        footer { padding: 80px 10%; background: #010205; border-top: 1px solid var(--border); margin-top: 50px; font-size: 0.9rem; color: var(--text-muted); }
+        .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 50px; max-width: 1200px; margin: 0 auto; text-align: left; }
+        .footer-col h3 { color: white; margin-bottom: 20px; font-size: 1.2rem; }
+        .footer-col p { margin-bottom: 15px; }
+        .footer-link { display: block; color: var(--text-muted); text-decoration: none; margin-bottom: 10px; transition: 0.3s; }
+        .footer-link:hover { color: var(--primary); padding-left: 5px; }
+        .email-link { color: white; font-weight: bold; text-decoration: none; border-bottom: 1px solid var(--primary); padding-bottom: 2px; }
+
+        @media (max-width: 768px) {
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="header">
+            <a href="index.html" class="back-btn"><i data-feather="arrow-left"></i> Back to Home</a>
+            <h1>Legal & Support Center</h1>
+            <p style="color:var(--text-muted);">Last Updated: February 2026</p>
+        </div>
+
+        <div class="legal-section" id="terms">
+            <h2>Terms of Service</h2>
+            <p>By hiring AE Solutions ("The Developer"), you ("The Client") agree to the following terms:</p>
+            
+            <h3>1. Payments & Deposits</h3>
+            <p>A <strong>50% non-refundable deposit</strong> is required to secure a development slot. Work begins only after the deposit is confirmed via M-Pesa. The remaining 50% is due upon project completion, before the final transfer of credentials.</p>
+
+            <h3>2. Ownership</h3>
+            <p>Upon full payment, the Client is granted <strong>100% ownership</strong> of the website code, design assets, and domain name. AE Solutions retains the right to display the project in our portfolio.</p>
+
+            <h3>3. Revisions</h3>
+            <p>The project includes the number of revision rounds specified in your selected package (1 round for Essential, 3 rounds for Professional). Additional design changes after approval will be billed at an hourly rate.</p>
+
+            <h3>4. Content</h3>
+            <p>The Client is responsible for providing all text and images. If not provided, placeholder text ("Lorem Ipsum") will be used.</p>
+        </div>
+
+        <div class="legal-section" id="privacy">
+            <h2>Privacy Policy</h2>
+            <p>We respect your privacy. Here is how we handle your data:</p>
+            
+            <h3>1. Data Collection</h3>
+            <p>We collect your Name, Phone Number, and Email solely for the purpose of project communication. We do not use cookies for tracking ads.</p>
+
+            <h3>2. Data Sharing</h3>
+            <p>We <strong>never</strong> sell or share your contact details with third parties. Your data is strictly used for invoicing and development updates.</p>
+        </div>
+
+        <div class="legal-section" id="support">
+            <h2>Contact Support</h2>
+            <div class="support-box">
+                <i data-feather="life-buoy" style="width: 40px; height: 40px; color: var(--primary); margin-bottom: 20px;"></i>
+                <h3>Need Help?</h3>
+                <p>For existing clients requiring technical assistance or updates:</p>
+                <p><strong>Email:</strong> <a href="mailto:aesolutions.global@gmail.com?subject=Support Request - AE Solutions" class="contact-link">aesolutions.global@gmail.com</a></p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/254794742727" class="contact-link">0794 742 727</a></p>
+                <p style="font-size: 0.8rem; margin-top: 20px; opacity: 0.6;">Standard Support Hours: Mon-Sun, 9am - 5pm EAT</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>AE Solutions</h3>
+                <p>High-performance web solutions for Mombasa's forward-thinking businesses. Built with precision, speed, and security.</p>
+                <a href="mailto:aesolutions.global@gmail.com?subject=Project Inquiry - AE Solutions" class="email-link">aesolutions.global@gmail.com</a>
+            </div>
+            <div class="footer-col">
+                <h3>Services</h3>
+                <a href="services.html#webdev" class="footer-link">Web Development</a>
+                <a href="services.html#seo" class="footer-link">SEO Optimization</a>
+                <a href="services.html#maps" class="footer-link">Google Maps Setup</a>
+            </div>
+           <div class="footer-col">
+                <h3>Legal</h3>
+                <a href="#privacy" class="footer-link">Privacy Policy</a>
+                <a href="#terms" class="footer-link">Terms of Service</a>
+                <a href="#support" class="footer-link">Contact Support</a>
+            </div>
+        </div>
+        <div style="margin-top: 50px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px;">
+            &copy; 2026 AE Solutions. Based in Mombasa, Kenya.
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
